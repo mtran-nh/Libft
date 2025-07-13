@@ -6,7 +6,7 @@
 #    By: mtran-nh <mtran-nh@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/08 15:34:43 by mtran-nh          #+#    #+#              #
-#    Updated: 2025/07/13 16:05:35 by mtran-nh         ###   ########.fr        #
+#    Updated: 2025/07/13 18:52:21 by mtran-nh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,10 @@ ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 OBJS = $(SRC:.c=.o)
 
+BONUS_SRC = ft_lstnew.c
+
+BONUS_OBJ = $(BONUS_SRC:.c=.o)
+
 NAME = libft.a
 
 RM = rm -f
@@ -32,8 +36,11 @@ $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
 	@echo "Library compiled: $(NAME)"
 
+bonus: $(OBJS) $(BONUS_OBJ)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJ)
+
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJ)
 	@echo "Object files removed"
 
 fclean: clean
@@ -42,4 +49,4 @@ fclean: clean
 
 re: fclean $(NAME)
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus

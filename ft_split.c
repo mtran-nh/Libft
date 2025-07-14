@@ -6,7 +6,7 @@
 /*   By: mtran-nh <mtran-nh@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 20:12:29 by mtran-nh          #+#    #+#             */
-/*   Updated: 2025/07/12 21:47:34 by mtran-nh         ###   ########.fr       */
+/*   Updated: 2025/07/14 22:01:15 by mtran-nh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,8 @@ static int	number_of_word(char const *s, char c)
 
 static int	number_of_char(char const *s, char c)
 {
-	int	nb;
 	int	i;
 
-	nb = 0;
 	i = 0;
 	while (s[i] != c && s[i])
 		i++;

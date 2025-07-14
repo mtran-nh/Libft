@@ -6,7 +6,7 @@
 #    By: mtran-nh <mtran-nh@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/08 15:34:43 by mtran-nh          #+#    #+#              #
-#    Updated: 2025/07/13 18:52:21 by mtran-nh         ###   ########.fr        #
+#    Updated: 2025/07/14 21:53:39 by mtran-nh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,14 +20,15 @@ ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 OBJS = $(SRC:.c=.o)
 
-BONUS_SRC = ft_lstnew.c
+BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+ft_lstadd_back.c
 
 BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 NAME = libft.a
 
 RM = rm -f
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 all:	$(NAME)

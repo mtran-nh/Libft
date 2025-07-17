@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mtran-nh <mtran-nh@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: mtran-nh <mtran-nh@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 11:16:53 by mtran-nh          #+#    #+#             */
-/*   Updated: 2025/07/12 21:18:19 by mtran-nh         ###   ########.fr       */
+/*   Updated: 2025/07/17 17:57:57 by mtran-nh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,6 @@ int	ft_atoi(const char *str)
 // {
 // 	char	*s;
 
-// 	s = "---+--+1234ab567";
+// 	s = " 1234ab567";
 // 	printf("%d\n", ft_atoi(s));
 // }
